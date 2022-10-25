@@ -16,6 +16,10 @@ const typeDefs = gql`
   email: String
   password:String
   }
+  type Auth{
+  token:String
+  User
+  }
 
   type Query{
   getSingleUser(id:ID!): User
